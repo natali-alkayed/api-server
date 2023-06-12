@@ -9,14 +9,17 @@ beforeAll(async () => {
 });
 
 describe('testing my server', () => {
+   
     it('404 on a bad route', async () => {
-        const response = await mockServerMethods.get('/');
-        expect(response.status).toBe(200);
-    });
-    it('404 on a bad method', async () => {
         const response = await mockServerMethods.get('/no');
         expect(response.status).toBe(404);
     });
+    
+    it('should return 404 on a bad method', async () => {
+    const response = await mockServerMethods.post('/');
+    expect(response.status).toBe(404);
+    });
+
     it('Create a record using POST', async () => {
         const response = await mockServerMethods.post('/food').send({
             FoodName: 'mansaf',
