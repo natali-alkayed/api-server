@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">36% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>25/25</span>
+                <span class='fraction'>9/25</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">36% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>25/25</span>
+                <span class='fraction'>9/25</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -132,38 +132,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -183,39 +183,39 @@ ClothesRouter.delete("/clothes/:id", deleteClothes);
 &nbsp;
 &nbsp;
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-async function createClothes(req, res) {
-    let newClothes = req.body;
-    let clothes = await Clothes.create(newClothes);
-    res.status(201).json(clothes);
+async function <span class="fstat-no" title="function not covered" >createClothes(</span>req, res) {
+    let newClothes = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    let clothes = <span class="cstat-no" title="statement not covered" >await Clothes.create(newClothes);</span>
+<span class="cstat-no" title="statement not covered" >    res.status(201).json(clothes);</span>
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-async function getClothess (req, res){
-      let clothess = await Clothes.findAll(); 
-      res.status(201).json(clothess);
+async function <span class="fstat-no" title="function not covered" >getClothess </span>(req, res){
+      let clothess = <span class="cstat-no" title="statement not covered" >await Clothes.findAll(); </span>
+<span class="cstat-no" title="statement not covered" >      res.status(201).json(clothess);</span>
   };
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-async function getClothes(req, res) {
-    const clothesId = parseInt(req.params.id);
-    let clothes = await Clothes.findOne({
+async function <span class="fstat-no" title="function not covered" >getClothes(</span>req, res) {
+    const clothesId = <span class="cstat-no" title="statement not covered" >parseInt(req.params.id);</span>
+    let clothes = <span class="cstat-no" title="statement not covered" >await Clothes.findOne({</span>
         where: {
             id: clothesId
         }
     })
-    res.status(200).json(clothes);
+<span class="cstat-no" title="statement not covered" >    res.status(200).json(clothes);</span>
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-async function updateClothes(req, res) {
-    let clothesId = parseInt(req.params.id);
-    let updateClothes = req.body;
-    let foundClothes = await Clothes.findOne({ where: { id: clothesId } });
-    let updatedClothes = await foundClothes.update(updateClothes);
-    res.status(201).json(updatedClothes);
+async function <span class="fstat-no" title="function not covered" >updateClothes(</span>req, res) {
+    let clothesId = <span class="cstat-no" title="statement not covered" >parseInt(req.params.id);</span>
+    let updateClothes = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    let foundClothes = <span class="cstat-no" title="statement not covered" >await Clothes.findOne({ where: { id: clothesId } });</span>
+    let updatedClothes = <span class="cstat-no" title="statement not covered" >await foundClothes.update(updateClothes);</span>
+<span class="cstat-no" title="statement not covered" >    res.status(201).json(updatedClothes);</span>
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-async function deleteClothes(req, res) {
-    let clothesId = parseInt(req.params.id);
-    let deleteClothes = await Clothes.destroy({ where: { id: clothesId } });
-    res.status(204).json(deleteClothes);
+async function <span class="fstat-no" title="function not covered" >deleteClothes(</span>req, res) {
+    let clothesId = <span class="cstat-no" title="statement not covered" >parseInt(req.params.id);</span>
+    let deleteClothes = <span class="cstat-no" title="statement not covered" >await Clothes.destroy({ where: { id: clothesId } });</span>
+<span class="cstat-no" title="statement not covered" >    res.status(204).json(deleteClothes);</span>
 }
 &nbsp;
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -226,7 +226,7 @@ module.exports = ClothesRouter;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-06-12T11:32:49.647Z
+                at 2023-06-13T17:56:51.747Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

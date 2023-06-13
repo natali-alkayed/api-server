@@ -28,7 +28,7 @@ describe('testing my server', () => {
     });
     it('Read a list of records using GET', async () => {
         const response = await mockServerMethods.get('/food');
-        expect(response.status).toBe(201);
+        expect(response.status).toBe(200);
     });
     it('Read a record using GET', async () => {
         const response = await mockServerMethods.get('/food/1');
